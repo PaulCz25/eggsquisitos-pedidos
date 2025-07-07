@@ -199,7 +199,7 @@
     const hrs = Math.floor(segundos / 3600).toString().padStart(2, '0');
     const min = Math.floor((segundos % 3600) / 60).toString().padStart(2, '0');
     const seg = Math.floor(segundos % 60).toString().padStart(2, '0');
-    return `${hrs}:${min}:${seg}`;
+    return ${hrs}:${min}:${seg};
   }
 
   function actualizarCronometros() {
